@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/sinchanar1231/ANSIBLE.git'
+               git branch: 'main', url: 'https://github.com/sinchanar1231/docker-ansible-terraform.git'
             }
         }
         stage('Terraform Init') {
