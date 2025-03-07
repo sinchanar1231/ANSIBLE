@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     environment {
@@ -7,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: '                                  '
+               git branch: 'main', url: 'https://github.com/sinchanar1231/docker-ansible-terraform.git'
             }
         }
         stage('Terraform Init') {
